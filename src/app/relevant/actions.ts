@@ -22,14 +22,16 @@ export async function getMovie(formData: FormData)
         method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer ' + process.env.TMDB_token
+            Authorization: 'Bearer ' + process.env.TMDB_token,
+            Host: 'api.themoviedb.org'
         }
     };
     
 
-    fetch('https://api.themoviedb.org/3/search/movie' + data.movie?.toString().replace(' ','%'),options)
+    fetch('https://api.themoviedb.org/3/search/movie?query=' + data.movie?.toString().replace(' ','%'),options)
     .then(res => res.json())
     .then(res => console.log(res))
     .catch(err => console.error(err));
+
 
 }
