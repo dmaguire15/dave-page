@@ -21,8 +21,11 @@
     "baseUrl": "./src",
     //Each path is relative to the baseUrl location
     "paths": {
+      "@/*": ["*"],
+      "@/app/*": ["app/*"],
       "@/styles/*": ["styles/*"],
-      "@/app/*": ["app/*"]
+      "@/app/*": ["app/*"],
+      "@/components/*": ["components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

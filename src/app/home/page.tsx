@@ -1,4 +1,4 @@
-import Navigation from "../components/navigation/navbar";
+import Navigation from "../../components/navigation/navbar";
 import Image from "next/image";
 import davePic from "../../../public/davepic.png";
 
@@ -40,7 +40,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="mt-10 flex justify-center">
-                
+                yes
             </div>
         </main>
     );
