@@ -1,4 +1,4 @@
-import Navigation from "../../components/navigation/navbar";
+
 import Image from "next/image";
 import davePic from "../../../public/davepic.png";
 

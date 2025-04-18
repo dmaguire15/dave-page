@@ -1,7 +1,6 @@
 'use client'; 
 import React from "react";
 import { Button } from "../components/ui/button";
-import { saveAs } from "file-saver";
 
 
 export default function HomePage() {
@@ -37,10 +36,10 @@ export default function HomePage() {
       <section className="max-w-4xl mx-auto py-6 px-4">
         <h2 className="text-3xl font-semibold mb-4 text-center">About Me</h2>
         <p>
-        I'm a passionate software engineer with over three years of professional experience. 
+        I&apos;m a passionate software engineer with over three years of professional experience. 
         I thrive on solving complex challenges and writing clean, maintainable code. 
-        Throughout my career, I've worked on maintaining and building enterprise applications, 
-        database-driven systems, and cloud-based automation tools. I'm always eager to learn new 
+        Throughout my career, I&apos;ve worked on maintaining and building enterprise applications, 
+        database-driven systems, and cloud-based automation tools. I&apos;m always eager to learn new 
         technologies and improve my craft, constantly seeking out opportunities to grow as 
         both a developer and a problem-solver.
         </p>
@@ -130,8 +129,8 @@ export default function HomePage() {
       {/* Contact */}
       <section className="text-center py-20 px-4 bg-gray-900 ">
         <h2 className="text-3xl font-semibold mb-4">Contact</h2>
-        <p className="mb-6 max-w-4xl mx-auto">Whether you're interested in collaborating on a project, have a question about my work, or just want to talk tech, feel free to reach out! 
-          I'm always open to new opportunities and conversations in the world of software engineering.</p>
+        <p className="mb-6 max-w-4xl mx-auto">Whether you&apos;re interested in collaborating on a project, have a question about my work, or just want to talk tech, feel free to reach out! 
+          I&apos;m always open to new opportunities and conversations in the world of software engineering.</p>
         <div className="space-x-4">
           <Button>Email Me</Button>
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/drmaguire/">

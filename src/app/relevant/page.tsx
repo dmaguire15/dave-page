@@ -1,6 +1,6 @@
 'use client'
 
-import { doTheThing, getMovie, sendMessage } from './actions';
+import { getMovie, sendMessage } from './actions';
 
 export default function Relevant() {
 
@@ -18,7 +18,7 @@ export default function Relevant() {
                     </div>
                 </form>
                 <div className='col-span-4 col-start-2 text-center'>
-                    <p className='m-5'>Enter the name of a movie and I'll tell you more:</p>
+                    <p className='m-5'>Enter the name of a movie and I&apos;ll tell you more:</p>
                     <form action={getMovie}>
                         <input type='text' name='movie' placeholder='Write a movie'></input>
                         <br/>
