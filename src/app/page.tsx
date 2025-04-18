@@ -2,7 +2,6 @@
 import React from "react";
 import { Button } from "../components/ui/button";
 import { saveAs } from "file-saver";
-import { Sic, SiTypescript, SiMicrosoftsqlserver, SiMicrosoftazure, SiAngular, SiNextdotjs } from 'react-icons/si';
 
 
 export default function HomePage() {
