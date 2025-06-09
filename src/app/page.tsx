@@ -9,7 +9,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-gradient-to-t from-purple-900 via-indigo-800 to-black text-white">
       <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
       {/* Main Section */}
-      <section className="flex flex-col items-center justify-center text-center py-20 px-4 space-y-6">
+      <section className="flex flex-col items-center justify-center text-center py-10 px-4 space-y-6">
         {/* Profile Photo */}
         <img
           src="/davepic.png"
@@ -33,8 +33,8 @@ export default function HomePage() {
       </section>
 
       {/* About Me */}
-      <section className="max-w-4xl mx-auto py-6 px-4">
-        <h2 className="text-3xl font-semibold mb-4 text-center">About Me</h2>
+      <section className="max-w-4xl mx-auto py-2 px-4">
+        <h2 className="text-3xl font-semibold mb-4 ">About Me</h2>
         <p>
         I&apos;m a passionate software engineer with over three years of professional experience. 
         I thrive on solving complex challenges and writing clean, maintainable code. 
@@ -52,12 +52,11 @@ export default function HomePage() {
           <span title="NextJS" className="devicon-nextjs-original-wordmark text-5xl"></span>
         </div>
       </section>
-
-      {/* Projects */}
-      <section className="max-w-6xl mx-auto py-16 px-4">
+      
+      {/* Projects 
+      <section className="max-w-6xl mx-auto py-16 px-4" >
         <h2 className="text-3xl font-semibold mb-8">Projects</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Project card */}
           <div className="bg-gray-800 rounded-xl p-6 shadow-md">
             <h3 className="text-xl font-bold mb-2">Enterprise Web Rebuild</h3>
             <p className="mb-4">Rebuilding a complex enterprise app using Node.js and Next.js, enhancing performance and scalability.</p>
@@ -84,12 +83,11 @@ export default function HomePage() {
               <Button variant="outline">View Code</Button>
             </div>
           </div>
-          {/* More project cards can go here */}
         </div>
       </section>
-
+      */}
       {/* Experience */}
-      <section className="max-w-4xl mx-auto py-16 px-4">
+      <section className="max-w-4xl mx-auto py-12 px-4">
         <h2 className="text-3xl font-semibold mb-6">Experience</h2>
         <div>
           <h3 className="text-xl font-bold">App Developer – LAZ Parking</h3>
@@ -132,11 +130,15 @@ export default function HomePage() {
         <p className="mb-6 max-w-4xl mx-auto">Whether you&apos;re interested in collaborating on a project, have a question about my work, or just want to talk tech, feel free to reach out! 
           I&apos;m always open to new opportunities and conversations in the world of software engineering.</p>
         <div className="space-x-4">
-          <Button>Email Me</Button>
+          <a href="mailto:drmaguire15@gmail.com">
+            <Button>Email Me</Button>
+          </a>
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/drmaguire/">
             <Button variant="outline">LinkedIn</Button>
           </a>
+          {/*
           <Button variant="outline">GitHub</Button>
+          */}
         </div>
       </section>
 
