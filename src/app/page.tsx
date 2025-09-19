@@ -25,10 +25,12 @@ export default function HomePage() {
           </p>
         </div>
         {/* Buttons */}
-        <div className="flex space-x-4 mt-4">
-          {/*<Button variant="outline">View My Work</Button>*/}
+        <div className="flex flex-col sm:flex-row gap-3 sm:space-x-4 mt-4">
           <a href="/api/resume" download="David_Maguire_Resume.pdf">
             <Button variant="outline">Download Resume</Button>
+          </a>
+          <a href="https://github.com/dmaguire15" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline">GitHub</Button>
           </a>
         </div>
       </section>
@@ -359,9 +361,9 @@ export default function HomePage() {
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/drmaguire/">
           <Button variant="outline">LinkedIn</Button>
         </a>
-        {/*
-        <Button variant="outline">GitHub</Button>
-        */}
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/dmaguire15">
+          <Button variant="outline">GitHub</Button>
+        </a>
       </div>
     </section>
 
