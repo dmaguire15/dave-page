@@ -142,27 +142,34 @@ export default function HomePage() {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-start space-x-3">
                   <span className="text-blue-400 mt-1">▸</span>
-                  <p className="text-sm md:text-base">Utilized AI LLMs, primarily <span className="text-orange-300 font-medium">Claude Opus 3</span> and <span className="text-orange-300 font-medium">Claude Sonnet 3.5</span>, to assist in development and documentation of codebases.</p>
+                  <p className="text-sm md:text-base">Utilized AI LLMs, primarily <span className="text-orange-300 font-medium">Claude Opus 4</span>
+                   and <span className="text-orange-300 font-medium">Claude Sonnet .5</span>, to assist in development and documentation of codebases.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-blue-400 mt-1">▸</span>
-                  <p className="text-sm md:text-base">Developed a full-stack application using <span className="text-blue-300 font-medium">React, JavaScript, and TypeScript</span> that supports OAuth authentication, collects user and API data via forms, stores it in structured SQL tables, and displays it on personalized user dashboards.</p>
+                  <p className="text-sm md:text-base">Developed a full-stack application using <span className="text-blue-300 font-medium">React, 
+                    JavaScript, and TypeScript</span> that supports OAuth authentication, collects user and API data via forms, stores it in structured SQL tables, 
+                    and displays it on personalized user dashboards.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-blue-400 mt-1">▸</span>
-                  <p className="text-sm md:text-base">Maintained legacy code for enterprise web applications written in <span className="text-purple-300 font-medium">Angular and TypeScript</span>.</p>
+                  <p className="text-sm md:text-base">Maintained legacy code for enterprise web applications written in 
+                    <span className="text-purple-300 font-medium">Angular and TypeScript</span>.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-blue-400 mt-1">▸</span>
-                  <p className="text-sm md:text-base">Developed a deployable application using <span className="text-purple-300 font-medium">Windows Forms and C#</span> that aggregates files of different types from various server locations and compiles them into structured PDF packages.</p>
+                  <p className="text-sm md:text-base">Developed a deployable application using <span className="text-purple-300 font-medium">Windows Forms and C#</span> 
+                  that aggregates files of different types from various server locations and compiles them into structured PDF packages.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-blue-400 mt-1">▸</span>
-                  <p className="text-sm md:text-base">Developed a <span className="text-purple-300 font-medium">C# Azure Function</span> to securely decrypt, process, and manipulate files from an SFTP directory, seamlessly transmitting the extracted data via API integrations.</p>
+                  <p className="text-sm md:text-base">Developed a <span className="text-purple-300 font-medium">C# Azure Function</span> 
+                  to securely decrypt, process, and manipulate files from an SFTP directory, seamlessly transmitting the extracted data via API integrations.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-blue-400 mt-1">▸</span>
-                  <p className="text-sm md:text-base">Created and maintained pipelines in <span className="text-blue-300 font-medium">Azure Data Factory</span>, utilizing SQL and PowerShell scripts.</p>
+                  <p className="text-sm md:text-base">Created and maintained pipelines in <span className="text-blue-300 font-medium">Azure Data Factory</span>, 
+                  utilizing SQL and PowerShell scripts.</p>
                 </div>
               </div>
               
