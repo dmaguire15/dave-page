@@ -267,7 +267,7 @@ export default function HomePage() {
                     <div className="flex items-start space-x-3">
                       <span className="text-blue-400 mt-1">▸</span>
                       <p className="text-sm md:text-base">
-                        Provided Tier 1 <span className="text-green-300 font-medium">enterprise support</span> for clients using CyberArk's Privileged Access Manager, assisting with account onboarding, password rotation, and vault connectivity issues.
+                        Provided Tier 1 <span className="text-green-300 font-medium">enterprise support</span> for clients using CyberArk Privileged Access Manager, assisting with account onboarding, password rotation, and vault connectivity issues.
                       </p>
                     </div>
                     <div className="flex items-start space-x-3">
