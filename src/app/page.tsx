@@ -1,10 +1,11 @@
 'use client'; 
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../components/ui/button";
-import { Brain, BrainCircuit, Cpu, Sparkles } from "lucide-react";
+import { Brain, BrainCircuit, Cpu, Sparkles, ChevronDown, ChevronUp } from "lucide-react";
 
 
 export default function HomePage() {
+  const [showAllExperience, setShowAllExperience] = useState(false);
 
   return (
     <main className="min-h-screen bg-gradient-to-t from-purple-900 via-indigo-800 to-black text-white">
@@ -76,7 +77,7 @@ export default function HomePage() {
           <div className="bg-gray-800/50 rounded-xl p-2 backdrop-blur-sm border border-gray-700/50 hover:border-green-500/50 transition-all duration-300">
             <h3 className="text-lg md:text-xl font-bold text-green-300 mb-2 text-center">Experience</h3>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-green-400">3+</div>
+              <div className="text-3xl md:text-4xl font-bold text-green-400">5+</div>
             </div>
           </div>
 
@@ -215,7 +216,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-purple-400 mt-1">▸</span>
-                  <p className="text-sm md:text-base">Implemented <span className="text-red-400 font-medium">security measures</span> to protect sensitive data and ensure compliance with industry standards.</p>
+                  <p className="text-sm md:text-base">Implemented <span className="text-red-300 font-medium">security measures</span> to protect sensitive data and ensure compliance with industry standards.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-purple-400 mt-1">▸</span>
@@ -232,6 +233,169 @@ export default function HomePage() {
                 <span className="bg-red-600/20 text-red-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">Security</span>
               </div>
             </div>
+          </div>
+
+          {/* Expandable Additional Experience */}
+          <div className={`transition-all duration-500 ease-in-out ${
+            showAllExperience 
+              ? 'max-h-none opacity-100' 
+              : 'max-h-0 opacity-0 overflow-hidden'
+          }`}>
+            <div className="space-y-8 md:space-y-12">
+              
+              {/* CyberArk */}
+              <div className="relative">
+
+                <div className="bg-gray-800/50 rounded-xl p-6 md:p-8 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold text-blue-200 mb-1">Enterprise Support Intern</h3>
+                      <h4 className="text-lg md:text-xl text-gray-300 mb-2">CyberArk</h4>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <span className="text-gray-400 text-sm">July 2021 – Jan 2022</span>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3 text-gray-300">
+                    <div className="flex items-start space-x-3">
+                      <span className="text-blue-400 mt-1">▸</span>
+                      <p className="text-sm md:text-base">
+                        Assisted in large-scale <span className="text-green-300 font-medium">support case close and account reconciliation</span> project.
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-blue-400 mt-1">▸</span>
+                      <p className="text-sm md:text-base">
+                        Provided Tier 1 <span className="text-green-300 font-medium">enterprise support</span> for clients using CyberArk's Privileged Access Manager, assisting with account onboarding, password rotation, and vault connectivity issues.
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-blue-400 mt-1">▸</span>
+                      <p className="text-sm md:text-base">
+                        Gained hands-on experience with <span className="text-red-300 font-medium">enterprise identity security concepts</span> such as privileged access management, credential rotation, and session monitoring.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-1 md:gap-2 mt-6">
+                    <span className="bg-green-600/20 text-green-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">Enterprise Support</span>
+                    <span className="bg-red-600/20 text-red-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">Cybersecurity</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Vineyard Vines */}
+              <div className="relative">
+                
+                <div className="bg-gray-800/50 rounded-xl p-6 md:p-8 backdrop-blur-sm border border-gray-700/50 hover:border-pink-500/50 transition-all duration-300">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold text-pink-300 mb-1">IT Intern</h3>
+                      <h4 className="text-lg md:text-xl text-gray-300 mb-2">Vineyard Vines</h4>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <span className="text-gray-400 text-sm">Jan 2020 – May 2020</span>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3 text-gray-300">
+                    <div className="flex items-start space-x-3">
+                      <span className="text-pink-400 mt-1">▸</span>
+                      <p className="text-sm md:text-base">
+                        Provided Tier 1 <span className="text-green-300 font-medium">IT support</span> to corporate and retail employees, resolving hardware, software, and network-related issues.
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-pink-400 mt-1">▸</span>
+                      <p className="text-sm md:text-base">
+                        Assisted in <span className="text-red-300 font-medium">diagnosing and troubleshooting</span> issues with desktop computers, laptops, printers, and mobile devices.
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-pink-400 mt-1">▸</span>
+                      <p className="text-sm md:text-base">
+                        Helped <span className="text-green-300 font-medium">set up and configure</span> user accounts, devices, and software for new hires and internal transfers.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-1 md:gap-2 mt-6">
+                    <span className="bg-green-600/20 text-green-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">IT Support</span>
+                    <span className="bg-red-600/20 text-red-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">Hardware Troubleshooting</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sacred Heart University */}
+              <div className="relative">
+                
+                <div className="bg-gray-800/50 rounded-xl p-6 md:p-8 backdrop-blur-sm border border-gray-700/50 hover:border-red-500/50 transition-all duration-300">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                    <div>
+                      <h3 className="text-xl md:text-2xl font-bold text-red-300 mb-1">Audio Visual Technician</h3>
+                      <h4 className="text-lg md:text-xl text-gray-300 mb-2">Sacred Heart University</h4>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <span className="text-gray-400 text-sm">Jan 2019 – May 2021</span>
+                    </div>
+                  </div>
+                  <div className="space-y-3 text-gray-300">
+                    <div className="flex items-start space-x-3">
+                      <span className="text-red-400 mt-1">▸</span>
+                      <p className="text-sm md:text-base">
+                        <span className="text-red-300 font-medium">Monitored and repaired</span> audio, video, control systems, and video conferencing equipment in classrooms and conference rooms across campus.
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-red-400 mt-1">▸</span>
+                      <p className="text-sm md:text-base">
+                        Conducted <span className="text-green-300 font-medium">routine maintenance, repairs, and inventory checks</span> on A/V equipment to ensure reliability.
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-red-400 mt-1">▸</span>
+                      <p className="text-sm md:text-base">
+                        Adhered to <span className="text-red-300 font-medium">safety protocols</span> while installing projectors, displays, and speakers.
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <span className="text-red-400 mt-1">▸</span>
+                      <p className="text-sm md:text-base">
+                        Implemented efficient <span className="text-red-300 font-medium">cable management</span> to maintain organized and hazard-free setups.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-1 md:gap-2 mt-6">
+                    <span className="bg-green-600/20 text-green-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">System Maintenance</span>
+                    <span className="bg-red-600/20 text-red-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">Equipment Repair</span>
+                    <span className="bg-red-600/20 text-red-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">Cable Management</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Show More/Less Button */}
+          <div className="flex justify-center mt-6 md:mt-8">
+            <button
+              onClick={() => setShowAllExperience(!showAllExperience)}
+              className="group flex items-center gap-2 bg-gray-800/50 hover:bg-gray-700/50 border border-gray-600/50 hover:border-blue-500/50 text-gray-300 hover:text-white px-6 py-3 rounded-lg transition-all duration-300 backdrop-blur-sm"
+            >
+              <span className="text-sm md:text-base font-medium">
+                {showAllExperience ? 'Show Less' : 'Show More'}
+              </span>
+              {showAllExperience ? (
+                <ChevronUp className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              ) : (
+                <ChevronDown className="w-4 h-4 group-hover:scale-110 transition-transform" />
+              )}
+            </button>
           </div>
 
         </div>
