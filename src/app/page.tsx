@@ -58,7 +58,7 @@ export default function HomePage() {
               <p className="text-base md:text-lg">
                 What sets me apart is my commitment to continuous learning and embracing 
                 cutting-edge technologies. I&apos;m always eager to explore new frameworks, optimize existing systems, and 
-                leverage AI tools to enhance development workflows.
+                leverage AI LLMs to enhance development workflows.
               </p>
               
               <p className="text-base md:text-lg"> 
