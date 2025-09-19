@@ -21,7 +21,7 @@ export default function HomePage() {
         <div>
           <h1 className="text-3xl md:text-6xl font-bold">David Maguire</h1>
           <p className="text-base md:text-2xl mt-2 leading-relaxed">
-            Software Engineer | Backend Specialist | Full Stack Developer
+            Software Engineer | Backend Developer | Full Stack Developer
           </p>
         </div>
         {/* Buttons */}
