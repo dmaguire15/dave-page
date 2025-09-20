@@ -200,11 +200,11 @@ export default function HomePage() {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-start space-x-3">
                   <span className="text-purple-400 mt-1">▸</span>
-                  <p className="text-sm md:text-base">Developed a <span className="text-purple-300 font-medium">web application</span> that generates and prints various order labels based on user-provided shipping numbers.</p>
+                  <p className="text-sm md:text-base">Developed a web application written in <span className="text-purple-300 font-medium">C# and ASP.NET</span> that generates and prints various order labels based on user-provided shipping numbers.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-purple-400 mt-1">▸</span>
-                  <p className="text-sm md:text-base">Developed a database-driven <span className="text-purple-300 font-medium">web application</span> enabling employees to input information in a structured report format, as well as view, edit, and print previously created reports.</p>
+                  <p className="text-sm md:text-base">Developed a <span className="text-blue-300 font-medium">database-driven</span> web application written in <span className="text-purple-300 font-medium">C# and ASP.NET</span> enabling employees to input information in a structured report format, as well as view, edit, and print previously created reports.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-purple-400 mt-1">▸</span>
@@ -226,7 +226,8 @@ export default function HomePage() {
 
               {/* Tags */}
               <div className="flex flex-wrap gap-1 md:gap-2 mt-6">
-                <span className="bg-purple-600/20 text-purple-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">Web Development</span>
+                <span className="bg-purple-600/20 text-purple-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">C#</span>
+                <span className="bg-purple-600/20 text-purple-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">ASP.NET</span>
                 <span className="bg-blue-600/20 text-blue-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">Database Management</span>
                 <span className="bg-green-600/20 text-green-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">Microsoft 365</span>
                 <span className="bg-green-600/20 text-green-300 px-2 md:px-3 py-1 rounded-lg text-xs md:text-sm">IT Infrastructure</span>
