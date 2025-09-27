@@ -46,7 +46,7 @@ export default function HomePage() {
           <div className="bg-gray-800/50 rounded-xl p-6 md:p-8 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300">
             <div className="space-y-3 md:space-y-4 text-gray-300 leading-relaxed">
               <p className="text-base md:text-lg">
-                I&apos;m a passionate software engineer with over three years of professional experience 
+                I&apos;m a passionate software engineer with over five years of professional experience 
                 building robust, scalable applications.
               </p>
               
